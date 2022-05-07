@@ -1,0 +1,74 @@
+<resources>
+    <string name="app_name">BluPrints_Updated_sdk</string>
+
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="hello_world">Hello Enter Text</string>
+
+    <string name="rasterprintQRcode">QR Raster</string>
+
+    <string name="takeImage">Take Multilingual Text</string>
+
+    <string name="type">Printer Type :  </string>
+
+    <string name="connect">Connect</string>
+    <string name="ip">Enter IP Address</string>
+
+    <string name="printRasterImage">Print Image Raster</string>
+
+    <string name="printBill">Print A Bill</string>
+
+    <string name="printHindiBill">Print Hindi Bill</string>
+
+    <string name="printText">Print Text</string>
+
+    <string name="printBarcode">Print Barcode</string>
+
+    <string name="printQrCode">Print QRCode</string>
+
+    <string name="printImage">Print Image</string>
+
+    <string name="disconnect">Disconnect</string>
+
+    <string name="rfId">RF ID: </string>
+
+    <string name="multilingual">Multilingual Text</string>
+
+    <string name="printRaster">Raster Image</string>
+
+    <string name="saveImage">Save Multilingual</string>
+    <string name="btn_conn">Connect USB Printer</string>
+
+    <string name="btnSend">Print Text</string>
+
+    <string name="btn_test">Print Image</string>
+
+    <string name="btnQRCode">Print QR Code</string>
+
+    <string name="btnHindi">Print Hindi Text</string>
+
+    <string name="btnPrintBill">Print Sample Bill</string>
+
+    <string name="btnSelectPrinter">Select Printer - 3 Inch</string>
+
+    <string name="btnCODE39">Print Barcode</string>
+
+    <string name="btnClose">Close</string>
+
+    <string name="txt_content">""</string>
+
+    <string name="menu_settings">set</string>
+
+    <string name="strLang">en</string>
+
+    <string name="msg_getpermission">obtaining USB device access permissions success</string>
+
+    <string name="msg_conn_state">USB Device Not Found , Please Retry</string>
+
+    <string-array name="printer_array">
+
+        <item id="1">2 inch Printer</item>
+
+        <item id="2">3 inch Printer</item>
+
+    </string-array>
+</resources>

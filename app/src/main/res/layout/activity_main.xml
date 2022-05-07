@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fillViewport="true"
+    android:layout_weight="1.0"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#bfbfbf"
+        android:id="@+id/linear">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"
+                android:text="@string/type"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp"
+                android:text="Battery :"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtBatteryStatus"
+                android:textColor="#990000"
+                android:textSize="20sp"
+                android:layout_marginRight="15dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:id="@+id/edittext"
+            android:layout_weight="1.0"
+            android:textColorHint="#000000"
+            android:hint="@string/hello_world"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pairing"
+            android:text="@string/connect"
+            android:background="@drawable/buttonbt"
+            android:textColor="#ffffff"
+            android:onClick="onShowPairedPrinters"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bill"
+                android:layout_marginRight="2dp"
+                android:text="@string/printBill"
+                android:background="@drawable/buttonbt"
+                android:textColor="#ffffff"
+                android:onClick="onPrintBill"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/printMultilingual"
+                android:background="@drawable/buttonbt"
+                android:layout_marginRight="2dp"
+                android:textColor="#ffffff"
+                android:text="Print Multilingual"
+                android:onClick="onPrintMultilingual"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/printRasterImage"
+                android:background="@drawable/buttonbt"
+                android:layout_marginLeft="2dp"
+                android:textColor="#ffffff"
+                android:text="Gallery Image"
+                android:onClick="onPrintRasterImage"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rasterprintQRcode"
+                android:text="Print Qr Code"
+                android:background="@drawable/buttonbt"
+                android:textColor="#ffffff"
+                android:layout_marginRight="2dp"
+                android:onClick="onPrintQRCodeRaster"
+                android:layout_weight="1"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rasterprintImage"
+                android:text="Print Image"
+                android:background="@drawable/buttonbt"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="2dp"
+                android:onClick="onPrintImage"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbt"
+                android:textColor="#ffffff"
+                android:layout_marginTop="4dp"
+                android:text="Reverse Text"
+                android:onClick="onPrintReverseText"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonbt"
+                android:textColor="#ffffff"
+                android:layout_marginTop="4dp"
+                android:id="@+id/disconnectbutton"
+                android:text="@string/disconnect"
+                android:onClick="onDisconnectDevice"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
